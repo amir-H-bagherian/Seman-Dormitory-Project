@@ -1,0 +1,106 @@
+@font-face {
+    font-family:yekanbakh ;
+    src: url(Font/IRANYEKANWEBBLACK.ttf);
+}
+@font-face {
+    font-family: iransans;
+    src: url(Font/IRANSans.ttf);
+}
+.name{
+    font-family: yekanbakh;
+    font-size: 26px;
+}
+.login{
+    font-family: iransans;
+    font-size: 20px;
+}
+*{
+    font-family: iransans;
+}
+body{
+background-color: #ECECEC;
+}
+.middlebox{
+    padding: 50px 20px 30px 50px;
+    background-color: white;
+}
+.box div label {
+flex-wrap: wrap;
+}
+.box input{
+    background-color: #D9D9D9;
+    text-align: right;
+}
+.loginbtn{
+    height: 45px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #1A8D25;
+}
+.loginbtn:hover{
+    background-color: #034209;
+    color: #D9D9D9;
+}
+/***** remove arrow in number input *****/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/***** End Section *****/
+  ::selection {
+    color: rgb(245, 245, 245);
+    background: rgb(38, 0, 209);
+  }
+  /*home css*/
+  .myheader{
+background-color: #5061CB;
+  }
+  nav {
+    background-color: #5061CB;
+  }
+  .navlogo{
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .myheader h3 {
+    color: white;
+  }
+  .myheader svg{
+    color: black;
+  }
+  .myheader h3{
+    font-family: yekanbakh;
+    font-weight: 100;
+  }
+  .mynav ul li a {
+    margin-right: 20px;
+    font-family: yekanbakh;
+    font-size: 17px;
+  }
+  .desctext{
+    padding: 50px;
+    text-align: justify;
+  }
+
+  .form-select{
+    font-size: 1rem !important;
+  }
+  .mytest{
+margin-top: 106px; 
+ }
+.mytext{
+  text-align: justify;
+}
+.dormpic{
+  align-items: center;
+  justify-content: center;
+float: left;
+margin: 30px;
+}
