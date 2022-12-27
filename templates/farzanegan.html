@@ -1,5 +1,5 @@
 {%extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
       <div class="container mt-5 ">
@@ -13,7 +13,7 @@
             آدرس: پردیس شماره 1 دانشگاه- جنب درب شرقی-  مجتمع سرای دانشجویی فرزانگان، کدپستی: 19111-35131
 
         </p>
-                    <img src="img/semdorm1.jpg" alt="فرزانگان" srcset="" class="img-fluid dormpic">
+                    <img src="{% static "img/semdorm1.jpg" %}" alt="فرزانگان" srcset="" class="img-fluid dormpic">
         <p class="mytext">
             ساختمان فرزانگان ۱:
 
@@ -31,6 +31,8 @@
             در سال 1388 بامساحت زیربنایی 3750 متر مربع در ۴ طبقه در ضلع غربی مجموعه سرای دانشجویی خوابگاهی فرزانگان احداث گردیده است. ظرفیت هر اتاق 6 الی 8 نفر و ظرفیت کل این ساختمان 406 نفر است. در هرطبقه، سرویس بهداشتی وآشپزخانه در قسمت میانی راهرو قرار دارد و سالن مطالعه در طبقه همکف بلوک لادن، دفتر شورای صنفی دانشجویان در طبقه دوم بلوک شقایق، اتاق 322  و بسیج دانشجویی در طبقه اول بلوک یاس، اتاق 122 قرار گرفته است.   
         </p>
 
+        <button style="margin: 10px;" onclick="history.back()" type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">بازگشت به صفحه قبل  </button>
+      
       </div>
 
 {% endblock %}

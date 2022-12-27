@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
       <div class="container mt-5 ">
@@ -12,7 +12,7 @@
  
             آدرس: پردیس شماره 1 دانشگاه- جنب بانک تجارت شعبه دانشگاه سمنان-  مجتمع سرای دانشجویی فرهیختگان، کدپستی: 19111-35131
         </p>
-                    <img src="img/sem dorm 1.jpeg.crdownload" alt="" srcset="" class="img-fluid dormpic">
+                    <img src="{% static "img/semdorm2.jpg" %}" alt="" srcset="" class="img-fluid dormpic">
         <p class="mytext">
             ساختمان فرهیختگان۱
           
@@ -38,6 +38,8 @@
 در هر طبقه آشپزخانه در ابتدای راهرو، سرویس های بهداشتی و حمام در انتهای راهرو (ضلع شرقی و غربی) قرار گرفته است و سالن مطالعه و سایت کامپیوتر در طبقه اول این ساختمان می باشد.
         </p>
 
+        <button style="margin: 10px;" onclick="history.back()" type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">بازگشت به صفحه قبل  </button>
+      
       </div>
 
 {% endblock %}

@@ -56,3 +56,13 @@ def login_user(request):
 @login_required(login_url='index')
 def home_page(request):
     return render(request, 'HomePage.html')
+
+
+def farzanegan_page(request):
+    return render(request, 'farzanegan.html')
+
+def farhikhtegan_page(request):
+    return render(request, 'farhikhtegan.html')
+
+def kosar_page(request):
+    return render(request, 'kosar.html')
