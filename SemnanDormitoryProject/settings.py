@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'studentInfo',
+    'mbti_test'
 ]
 
 AUTH_USER_MODEL = 'studentInfo.User'
