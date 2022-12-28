@@ -66,3 +66,5 @@ def farhikhtegan_page(request):
 
 def kosar_page(request):
     return render(request, 'kosar.html')
+def mbti_test(request):
+    return render(request,'mbti-questions.html')
