@@ -1,1261 +1,1206 @@
-<html lang="fa" prefix="og: http://ogp.me/ns#"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="92zEBHlJyAqWeuFPVFcPIdbGHB8QhJqqe2lpnG4H">
-    <meta name="description" content="">
-    <link rel="preload" href="" as="image">
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body dir="rtl">
+    <div class="container mt-5 ">
+        <div class="col-12">
+            <div class="col-md-12">
+                <div class="row ">
+
+
+                    <div class="text-bg-danger">
+                         <p> عبارت 
+                            این تست دارای ۶۰ سوال است. در پاسخ به سوالات گزینه ای را انتخاب کنید که به شخصیت واقعی شما
+                            نزدیک تر است نه ویژگی هایی که می خواهید داشته باشید. پاسخ درست یا غلط وجود ندارد. به تمامی
+                            سوالات با دقت پاسخ دهید.
+                        </p>
+                    </div>
+
+                    <div class="question-body">
+                        <form method="post" class="form-box" id="assessment-questions"
+                            action="https://karboom.io/assessments/myers-briggs/show/lxnemlz/1672225141">
+                            <div class="q-no-answer m-t-30" id="1">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱</p>
+                                </div>
+                                <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_10" name="question_1" type="radio" value="I">
+                                        <label for="question_10">
+                                            معمولاً احساسات و عواطف خود را در خويش نگه می دارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_11" name="question_1" type="radio" value="E">
+                                        <label for="question_11">
+                                            معمولاً احساسات و عواطف خودرا با ديگران و به راحتی درميان مي گذارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="2">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_20" name="question_2" type="radio" value="S">
+                                        <label for="question_20">
+                                            براي من امور قطعی، عينی و مشخص مهم هستند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_21" name="question_2" type="radio" value="N">
+                                        <label for="question_21">
+                                            براي من ايده ها، استنباط ها و الهامات مهم هستند.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="3">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_31" name="question_3" type="radio" value="T">
+                                        <label for="question_31">
+                                            هنگام تصميم گيری به آنچه که منطق و خرد بر آن حکم می کند، عمل می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_30" name="question_3" type="radio" value="F">
+                                        <label for="question_30">
+                                            هنگام تصميم گيری به آنچه که احساسات و دلم گواه می دهد، عمل می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="4">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_40" name="question_4" type="radio" value="P">
+                                        <label for="question_40">
+                                            دوست دارم در شرايط انعطاف پذير و متغيری زندگی کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_41" name="question_4" type="radio" value="J">
+                                        <label for="question_41">
+                                            دوست دارم همه چيز منظم و برنامه ريزی شده باشد.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="5">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_50" name="question_5" type="radio" value="I">
+                                        <label for="question_50">
+                                            دوست دارم در زمينه های محدودی اطلاعات داشته باشم ولي در هر زمينه عميق و
+                                            کامل.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_51" name="question_5" type="radio" value="E">
+                                        <label for="question_51">
+                                            دوست دارم در زمينه های زيادی اطلاعات داشته باشم ولی در هر زمينه تا حد کم و
+                                            سطحی.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="6">
+                                <div class="number mt-3">
+                                     <p> عبارت ۶</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_60" name="question_6" type="radio" value="S">
+                                        <label for="question_60">
+                                            بيشتر اوقات به واقعيات عينی (آنچه که وجود دارد ) توجه می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_61" name="question_6" type="radio" value="N">
+                                        <label for="question_61">
+                                            بيشتر اوقات حقايق ( آنچه که بايد وجود داشته باشد ) را در ذهن و تخيل خود مجسم
+                                            مي کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="7">
+                                <div class="number mt-3">
+                                     <p> عبارت ۷</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_71" name="question_7" type="radio" value="T">
+                                        <label for="question_71">
+                                            از نظر من يک قاضی و داور عادل براي جامعه مفيدتر است.
+
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_70" name="question_7" type="radio" value="F">
+                                        <label for="question_70">
+                                            از نظر من يک معلم و مربی مهربان برای جامعه مفيدتر است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="8">
+                                <div class="number mt-3">
+                                     <p> عبارت ۸</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_80" name="question_8" type="radio" value="P">
+                                        <label for="question_80">
+                                            ترجيحاً ملاقاتها و ديدارهای خود را بدون برنامه قبلی و آزادانه انجام می دهم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_81" name="question_8" type="radio" value="J">
+                                        <label for="question_81">
+                                            ترجيحاً ديدار با افراد و وعده ملاقات خود را از پيش تعيين می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="9">
+                                <div class="number mt-3">
+                                     <p> عبارت ۹</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_90" name="question_9" type="radio" value="I">
+                                        <label for="question_90">
+                                            کم حرف و محتاط هستم و علاقه ای به جلب توجه ديگران به خود ندارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_91" name="question_9" type="radio" value="E">
+                                        <label for="question_91">
+                                            توجه ديگران را به خود جلب می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="10">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۰</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_100" name="question_10" type="radio" value="S">
+                                        <label for="question_100">
+                                            اگر معلم بودم ترجيح می دادم دروسي را تدريس کنم که واقعيات و امور قطعی وعينی
+                                            را شامل شوند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_101" name="question_10" type="radio" value="N">
+                                        <label for="question_101">
+                                            اگر معلم بودم، ترجيحاً دروسی را تدريس می کردم که حقايق و نظريه ها و تئوری ها
+                                            را شامل شوند (مانند فلسفه).
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="11">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۱</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_111" name="question_11" type="radio" value="T">
+                                        <label for="question_111">
+                                            قاطع، محکم و استوار هستم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_110" name="question_11" type="radio" value="F">
+                                        <label for="question_110">
+                                            انعطاف پذير ، ملايم و لطيف هستم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="12">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۲</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_120" name="question_12" type="radio" value="P">
+                                        <label for="question_120">
+                                            غالباً انجام کارهای پيش پا افتاده و جزئی را فراموش می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_121" name="question_12" type="radio" value="J">
+                                        <label for="question_121">
+                                            به منظور جلوگيری از فراموش شدن انجام کارها، آن ها را يادداشت می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="13">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۳</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_130" name="question_13" type="radio" value="I">
+                                        <label for="question_130">
+                                            در مهمانی ها، جلسات وگردهمايی ها منتظر مي مانم تا ديگران به سوی من بيايند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_131" name="question_13" type="radio" value="E">
+                                        <label for="question_131">
+                                            در مهماني ها، جلسات وگردهمايی ها من سر صحبت را با ديگران باز می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="14">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۴</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_140" name="question_14" type="radio" value="S">
+                                        <label for="question_140">
+                                            به جزئيات امور توجه زيادی دارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_141" name="question_14" type="radio" value="N">
+                                        <label for="question_141">
+                                            بيشتر کليت هر موضوعی برايم مهم است و به جزئيات آن توجه زيادی نمی کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="15">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۵</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_151" name="question_15" type="radio" value="T">
+                                        <label for="question_151">
+                                            به آينده اهميت زيادی داده و برای آن برنامه ريزی می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_150" name="question_15" type="radio" value="F">
+                                        <label for="question_150">
+                                            خيلی به آينده فکر نمی کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="16">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۶</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_160" name="question_16" type="radio" value="P">
+                                        <label for="question_160">
+                                            معمولاً کارها را شروع می کنم و حين اجرا به رفع اشکالات اجرايی وتدارک مورد
+                                            نياز می پردازم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_161" name="question_16" type="radio" value="J">
+                                        <label for="question_161">
+                                            قبل از اجرای طرح ها وکارها برنامه ريزی انجام می دهم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="17">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۷</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_170" name="question_17" type="radio" value="I">
+                                        <label for="question_170">
+                                            مايل هستم دوستان کم همراه با ارتباط زياد و صميمانه داشته باشم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_171" name="question_17" type="radio" value="E">
+                                        <label for="question_171">
+                                            مايل هستم دوستان زياد همراه با ارتباط محدود داشته باشم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="18">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۸</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_180" name="question_18" type="radio" value="S">
+                                        <label for="question_180">
+                                            به استفاده از امکانات و توانايی های موجود تاکيد دارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_181" name="question_18" type="radio" value="N">
+                                        <label for="question_181">
+                                            نوآوری و خلاقيت داشتن در کارها برايم اولويت دارد.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="19">
+                                <div class="number mt-3">
+                                     <p> عبارت ۱۹</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_191" name="question_19" type="radio" value="T">
+                                        <label for="question_191">
+                                            بيشتر پيرو منطق و دليل هستم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_190" name="question_19" type="radio" value="F">
+                                        <label for="question_190">
+                                            بيشتر پيرو احساس و عاطفه هستم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="20">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۰</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_200" name="question_20" type="radio" value="P">
+                                        <label for="question_200">
+                                            در انجام کارهايی که از قبل پيش بينی نشده و يا فعاليت هايی که به سرعت و عکس
+                                            العمل فوری نياز دارد، موفق هستم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_201" name="question_20" type="radio" value="J">
+                                        <label for="question_201">
+                                            در انجام کارهايی که بر اساس طرح و برنامه قبلی مي باشد موفق هستم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="21">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۱</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_210" name="question_21" type="radio" value="I">
+                                        <label for="question_210">
+                                            به طور معمول دوستان کمی داشته ولي روابط صميمانه ای با آنها دارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_211" name="question_21" type="radio" value="E">
+                                        <label for="question_211">
+                                            به طور معمول با افراد زيادی دوستی و آشنايی دارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="22">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۲</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_220" name="question_22" type="radio" value="S">
+                                        <label for="question_220">
+                                            عمدتا از زندگی در زمان حال لذت زيادی برده و خيلي به آينده فکر نمی کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_221" name="question_22" type="radio" value="N">
+                                        <label for="question_221">
+                                            به آينده توجه زيادي داشته و آن را پيش بيني مي کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="23">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۳</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_231" name="question_23" type="radio" value="T">
+                                        <label for="question_231">
+                                            معمولا مغز من بر قلب من حاکم است.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_230" name="question_23" type="radio" value="F">
+                                        <label for="question_230">
+                                            معمولا قلب من بر مغز من حاکم است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="24">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۴</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_240" name="question_24" type="radio" value="P">
+                                        <label for="question_240">
+                                            معمولاً در کارهای روزانه مايلم بر حسب ضرورتها و فوريت هايی که پيش می آيد عمل
+                                            کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_241" name="question_24" type="radio" value="J">
+                                        <label for="question_241">
+                                            معمولاً در کارهاي روزانه مايلم که طبق برنامه عمل کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="25">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۵</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_250" name="question_25" type="radio" value="I">
+                                        <label for="question_250">
+                                            از احساسات و عواطف درونی خود کمتر با ديگران صحبت می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_251" name="question_25" type="radio" value="E">
+                                        <label for="question_251">
+                                            افکار و عواطف خود را آزاد و راحت بيان می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="26">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۶</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_260" name="question_26" type="radio" value="S">
+                                        <label for="question_260">
+                                            کلمات مشخص و دقيق را ترجيح داده و بکار مي برم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_261" name="question_26" type="radio" value="N">
+                                        <label for="question_261">
+                                            کلمات تمثيلی و کنايه ای را ترجيح داده و بکار می برم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="27">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۷</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_271" name="question_27" type="radio" value="T">
+                                        <label for="question_271">
+                                            در تصميم گيری ها رعايت عدالت و انصاف از همه چيز برايم مهم تر است.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_270" name="question_27" type="radio" value="F">
+                                        <label for="question_270">
+                                            در تصميم گيری ها رعايت حال و شرايط ديگران از همه چيز برايم مهم تر است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="28">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۸</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_280" name="question_28" type="radio" value="P">
+                                        <label for="question_280">
+                                            معمولاً کارها را شروع می کنم و در حين اجرا به رفع مشکلات پيش آمده می پردازم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_281" name="question_28" type="radio" value="J">
+                                        <label for="question_281">
+                                            معمولاً قبل از شروع کارها مقدمات کار را آماده و مشکلات را پيش بينی می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="29">
+                                <div class="number mt-3">
+                                     <p> عبارت ۲۹</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_290" name="question_29" type="radio" value="I">
+                                        <label for="question_290">
+                                            کارهای فردی را ترجيح می دهم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_291" name="question_29" type="radio" value="E">
+                                        <label for="question_291">
+                                            کارهای گروهی را ترجيح می دهم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="30">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۰</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_300" name="question_30" type="radio" value="S">
+                                        <label for="question_300">
+                                            واقعيات ( آنچه که هست ) و پديده ها برايم جالب اند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_301" name="question_30" type="radio" value="N">
+                                        <label for="question_301">
+                                            حقايق ( آنچه که بايد باشد) و ايده ها برايم جالب اند.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="31">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۱</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_311" name="question_31" type="radio" value="T">
+                                        <label for="question_311">
+                                            برای عدل و انصاف ارزش زيادی قائلم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_310" name="question_31" type="radio" value="F">
+                                        <label for="question_310">
+                                            برای بذل و بخشش ارزش زيادی قائلم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="32">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۲</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_320" name="question_32" type="radio" value="P">
+                                        <label for="question_320">
+                                            تهيه فهرست از کار هايی که بايد در روز تعطيل انجام داد را کاری بيهوده و عبث
+                                            می دانم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_321" name="question_32" type="radio" value="J">
+                                        <label for="question_321">
+                                            تهيه فهرست از کارهايی که بايد در روز تعطيل انجام داد را کاری جدی و سودمند می
+                                            دانم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="33">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۳</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_330" name="question_33" type="radio" value="I">
+                                        <label for="question_330">
+                                            معمولاً در مهمانی ها و مجالس با شخص يا اشخاصی که از قبل می شناسم گفتگو می
+                                            کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_331" name="question_33" type="radio" value="E">
+                                        <label for="question_331">
+                                            معمولاً در مهمانی ها و مجالس به دنبال اشخاص جديدی هستم تا با آنها گفتگو کرده
+                                            و آشنا شوم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="34">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۴</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_340" name="question_34" type="radio" value="S">
+                                        <label for="question_340">
+                                            دوستان من اکثراً واقع گرا و واقع بين هستند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_341" name="question_34" type="radio" value="N">
+                                        <label for="question_341">
+                                            دوستان من اکثراً کسانی هستند که قوه تخيل قوی دارند.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="35">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۵</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_351" name="question_35" type="radio" value="T">
+                                        <label for="question_351">
+                                            به نظر من فردی که با دلايل و استدلال با موضوعات برخورد می کند، بهتر است.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_350" name="question_35" type="radio" value="F">
+                                        <label for="question_350">
+                                            به نظر من فردی که با عاطفه و احساس واقعی و دلسوزی با موضوعات برخورد می کند،
+                                            بهتر است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="36">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۶</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_360" name="question_36" type="radio" value="P">
+                                        <label for="question_360">
+                                            غالباً خود را ملزم به انجام کارها در سر وقت معين و مشخص ندانسته و خود را در
+                                            محدوده زمان مقيد نمی کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_361" name="question_36" type="radio" value="J">
+                                        <label for="question_361">
+                                            غالباً برنامه خود را به طور مشخص و دقيق تعيين کرده و بر انجام آنها در سر وقت
+                                            مقرر اصرار می ورزم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="37">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۷</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_370" name="question_37" type="radio" value="I">
+                                        <label for="question_370">
+                                            آرام و متفکر هستم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_371" name="question_37" type="radio" value="E">
+                                        <label for="question_371">
+                                            با نشاط و فعال هستم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="38">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۸</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_380" name="question_38" type="radio" value="S">
+                                        <label for="question_380">
+                                            دوست دارم فردی واقع گرا و دقيق باشم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_381" name="question_38" type="radio" value="N">
+                                        <label for="question_381">
+                                            دوست دارم فردی مبتکر و خلاق باشم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="39">
+                                <div class="number mt-3">
+                                     <p> عبارت ۳۹</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_391" name="question_39" type="radio" value="T">
+                                        <label for="question_391">
+                                            به تجزيه وتحليل موضوعات علاقه دارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_390" name="question_39" type="radio" value="F">
+                                        <label for="question_390">
+                                            به فيلم ها و بحث های عاطفی که به مسائل انسانی می پردازند، علاقه دارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="40">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۰</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_400" name="question_40" type="radio" value="P">
+                                        <label for="question_400">
+                                            معمولاً زندگی خود را با توجه به اوضاع واحوالی که پيش مي آيد ، تنظيم و اداره
+                                            می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_401" name="question_40" type="radio" value="J">
+                                        <label for="question_401">
+                                            معمولاً کارهايی را که مايل به انجام آن هستم يادداشت کرده يا حداقل به طور
+                                            مرتب به خاطر می سپارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="41">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۱</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_410" name="question_41" type="radio" value="I">
+                                        <label for="question_410">
+                                            کم حرف هستم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_411" name="question_41" type="radio" value="E">
+                                        <label for="question_411">
+                                            خوش صحبت هستم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="42">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۲</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_420" name="question_42" type="radio" value="S">
+                                        <label for="question_420">
+                                            هر ايده جديدی را اگر قابل اجرا باشد می پذيرم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_421" name="question_42" type="radio" value="N">
+                                        <label for="question_421">
+                                            براي هر ايده جديدی به دليل نو بودن آن (بدون توجه به اجرايی بودن يا نبودن آن)
+                                            ارزش زيادی قائل هستم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="43">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۳</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_431" name="question_43" type="radio" value="T">
+                                        <label for="question_431">
+                                            دوست دارم فردی متفکر باشم که عاقلانه رفتار می کند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_430" name="question_43" type="radio" value="F">
+                                        <label for="question_430">
+                                            دوست دارم فردی عاطفی باشم که با احساسات انسانی رفتار می کند.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="44">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۴</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_440" name="question_44" type="radio" value="P">
+                                        <label for="question_440">
+                                            بعضی افراد مرا آدمی بی نظم و دارای زندگی شلوغ می دانند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_441" name="question_44" type="radio" value="J">
+                                        <label for="question_441">
+                                            بعضی افراد مرا آدمی خشک و غير قابل انعطاف می دانند.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="45">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۵</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_450" name="question_45" type="radio" value="I">
+                                        <label for="question_450">
+                                            پس از مکث و تأمل کافی، نسبت به بحث يا سؤالات مطرح شده اظهار نظر مي کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_451" name="question_45" type="radio" value="E">
+                                        <label for="question_451">
+                                            در هر لحظه که فرصت شد سؤالات را مطرح يا نظر خود را اعلام می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="46">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۶</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_460" name="question_46" type="radio" value="S">
+                                        <label for="question_460">
+                                            ثبات و استحکام را دوست دارم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_461" name="question_46" type="radio" value="N">
+                                        <label for="question_461">
+                                            تغيير و انعطاف را دوست دارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="47">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۷</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_471" name="question_47" type="radio" value="T">
+                                        <label for="question_471">
+                                            بيشتر از نتيجه گيری های منطقی و استدلال استفاده می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_470" name="question_47" type="radio" value="F">
+                                        <label for="question_470">
+                                            بيشتر بر اساس عواطف و عقايد شخصی نسبت به زندگی يا افراد عمل می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="48">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۸</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_480" name="question_48" type="radio" value="P">
+                                        <label for="question_480">
+                                            هر وقت که مناسب بود و فرصت دست داد نسبت به انجام کارها آزادانه و بدون فشار
+                                            اقدام می کنم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_481" name="question_48" type="radio" value="J">
+                                        <label for="question_481">
+                                            اين مهم است که از قبل بدانم چه کاری يا چه چيزی از من انتظار دارند تا به
+                                            انجام آنها بپردازم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="49">
+                                <div class="number mt-3">
+                                     <p> عبارت ۴۹</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_490" name="question_49" type="radio" value="I">
+                                        <label for="question_490">
+                                            ترجيح می دهم در جمع افراد توسط فرد ديگری معرفی شوم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_491" name="question_49" type="radio" value="E">
+                                        <label for="question_491">
+                                            معمولاً در جمع، ديگران را به يکديگر معرفی می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="50">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۰</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_500" name="question_50" type="radio" value="S">
+                                        <label for="question_500">
+                                            تلاش می کنم با رعايت ترتيب، مراحل پيش بينی شده کارها را انجام دهم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_501" name="question_50" type="radio" value="N">
+                                        <label for="question_501">
+                                            هنگام انجام دادن کارها از قسمت های بی اهميت آن صرف نظر می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="51">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۱</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_511" name="question_51" type="radio" value="T">
+                                        <label for="question_511">
+                                            نسبت به هر گروه يا افراد سازمانی که با آنها کار می کنم ، براساس تجزيه وتحليل
+                                            دقيق اوضاع و اطلاعات موجود اظهار نظر می کنم
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_510" name="question_51" type="radio" value="F">
+                                        <label for="question_510">
+                                            نسبت به هر گروه يا افراد سازمانی که با آنها کار می کنم ، براساس درک
+                                            نيازهايشان، عواطف انسانی و خود را به جاي آنها گذاشتن اظهار نظر می کنم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="52">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۲</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_520" name="question_52" type="radio" value="P">
+                                        <label for="question_520">
+                                            معمولاً بدون فوت وقت يک کار يا پروژه را شروع و به هر قسمتی از آن که ممکن
+                                            باشد زودتر می پردازم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_521" name="question_52" type="radio" value="J">
+                                        <label for="question_521">
+                                            معمولاً در انجام کارها آنها را به اجزاي مشخص تقسيم کرده وسپس به ترتيب به
+                                            انجام بخش های مشخص شده می پردازم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="53">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۳</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_530" name="question_53" type="radio" value="I">
+                                        <label for="question_530">
+                                            به کارهای فردی ( يا حداکثر با يکی دو نفر ديگر ) علاقمندم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_531" name="question_53" type="radio" value="E">
+                                        <label for="question_531">
+                                            به کارهای گروهی علاقمندم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="54">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۴</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_540" name="question_54" type="radio" value="S">
+                                        <label for="question_540">
+                                            يکي از اشکالات اساسی زندگی من، يکنواختی وچسبيدن به برنامه و کار مشخص بوده
+                                            است.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_541" name="question_54" type="radio" value="N">
+                                        <label for="question_541">
+                                            يکي از اشکالات اساسی زندگی من از شاخه ای به شاخه ای پريدن و داشتن برنامه های
+                                            متعدد بوده است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="55">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۵</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_551" name="question_55" type="radio" value="T">
+                                        <label for="question_551">
+                                            قاطع بودن برای من الويت است.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_550" name="question_55" type="radio" value="F">
+                                        <label for="question_550">
+                                            ملايم و احساسی بودن برای من الويت است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="56">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۶</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_560" name="question_56" type="radio" value="P">
+                                        <label for="question_560">
+                                            علاقمندم جلسات و گردهمايی ها هنگامی شروع شود که همگی افراد حضور و آمادگی
+                                            لازم را داشته و احساس راحتي کنند.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_561" name="question_56" type="radio" value="J">
+                                        <label for="question_561">
+                                            علاقه‌مندم جلسات رأس ساعت مقرر شروع شود و روي وقت‌شناسی تأکيد دارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="57">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۷</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_570" name="question_57" type="radio" value="I">
+                                        <label for="question_570">
+                                            از نظر ديگران ممکن است تا حدی گوشه گير به نظر برسم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_571" name="question_57" type="radio" value="E">
+                                        <label for="question_571">
+                                            از نظر ديگران ممکن است فردی خوش صحبت به نظر برسم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="58">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۸</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_580" name="question_58" type="radio" value="S">
+                                        <label for="question_580">
+                                            کارها را با نظم و ترتيب و مرحله به مرحله انجام می دهم.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_581" name="question_58" type="radio" value="N">
+                                        <label for="question_581">
+                                            قسمت های مهم و جالب کار را زودتر انجام می دهم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="59">
+                                <div class="number mt-3">
+                                     <p> عبارت ۵۹</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_591" name="question_59" type="radio" value="T">
+                                        <label for="question_591">
+                                            رعايت اصول و قوانين برايم بسيار مهم است.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_590" name="question_59" type="radio" value="F">
+                                        <label for="question_590">
+                                            مهربانی و گذشت در زندگی برايم بسيار مهم است.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-no-answer m-t-30" id="60">
+                                <div class="number mt-3">
+                                     <p> عبارت ۶۰</p>
+                                </div>
+                                 <div class="answer col-lg-11 col-md-10">
+                                    <div class="radio radio-orange">
+                                        <input id="question_600" name="question_60" type="radio" value="P">
+                                        <label for="question_600">
+                                            مقيد بودن به برنامه ای که از قبل مشخص شده باشد براي من جالب نيست.
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-orange">
+                                        <input id="question_601" name="question_60" type="radio" value="J">
+                                        <label for="question_601">
+                                            از انجام دادن کارهايی که از قبل مشخص شده باشد احساس رضايت دارم.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
 
-    <title>se-project</title>
-    <meta name="robots" content="noindex">
-    <!-- Global site tag (gtag.js) - Google Analytics  -->
 
+                        </form>
+                        <button type="submit" class="btn btn-primary">ثبت</button>
+                    </div>
 
-
-
-
-
-    <noscript><style> .script-only { display: none } </style></noscript>
-</head>
-<body data-spy="scroll" data-target=".scrollspy" class="">
-
-
-
-
-
-
-
-
-<div class="container m-t-100">
-    <div class="col-lg-10 col-md-10 assessment">
-        <div class="col-md-12">
-            <div class="row">
-
-
-                <div class="desc clearfix">
-                    <p>
-                        این تست دارای ۶۰ سوال است. در پاسخ به سوالات گزینه ای را انتخاب کنید که به شخصیت واقعی شما نزدیک تر است نه ویژگی هایی که می خواهید داشته باشید. پاسخ درست یا غلط وجود ندارد. به تمامی سوالات با دقت پاسخ دهید.
-                    </p>
                 </div>
-
-                <div class="question-body">
-                    <form method="post" class="form-box" id="assessment-questions" action="https://karboom.io/assessments/myers-briggs/show/lxnemlz/1672225141">
-                        <div class="q-no-answer m-t-30" id="1">
-                            <div class="number">
-                                <p>۱</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_10" name="question_1" type="radio" value="I">
-                                    <label for="question_10">
-                                        معمولاً احساسات و عواطف خود را در خويش نگه می دارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_11" name="question_1" type="radio" value="E">
-                                    <label for="question_11">
-                                        معمولاً احساسات و عواطف خودرا با ديگران و به راحتی درميان مي گذارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="2">
-                            <div class="number">
-                                <p>۲</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_20" name="question_2" type="radio" value="S">
-                                    <label for="question_20">
-                                        براي من امور قطعی، عينی و مشخص مهم هستند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_21" name="question_2" type="radio" value="N">
-                                    <label for="question_21">
-                                        براي من ايده ها، استنباط ها و الهامات مهم هستند.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="3">
-                            <div class="number">
-                                <p>۳</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_31" name="question_3" type="radio" value="T">
-                                    <label for="question_31">
-                                        هنگام تصميم گيری به آنچه که منطق و خرد بر آن حکم می کند، عمل می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_30" name="question_3" type="radio" value="F">
-                                    <label for="question_30">
-                                        هنگام تصميم گيری به آنچه که احساسات و دلم گواه می دهد، عمل می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="4">
-                            <div class="number">
-                                <p>۴</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_40" name="question_4" type="radio" value="P">
-                                    <label for="question_40">
-                                        دوست دارم در شرايط انعطاف پذير و متغيری زندگی کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_41" name="question_4" type="radio" value="J">
-                                    <label for="question_41">
-                                        دوست دارم همه چيز منظم و برنامه ريزی شده باشد.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="5">
-                            <div class="number">
-                                <p>۵</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_50" name="question_5" type="radio" value="I">
-                                    <label for="question_50">
-                                        دوست دارم در زمينه های محدودی اطلاعات داشته باشم ولي در هر زمينه عميق و کامل.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_51" name="question_5" type="radio" value="E">
-                                    <label for="question_51">
-                                        دوست دارم در زمينه های زيادی اطلاعات داشته باشم ولی در هر زمينه تا حد کم و سطحی.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="6">
-                            <div class="number">
-                                <p>۶</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_60" name="question_6" type="radio" value="S">
-                                    <label for="question_60">
-                                        بيشتر اوقات به واقعيات عينی (آنچه که وجود دارد ) توجه می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_61" name="question_6" type="radio" value="N">
-                                    <label for="question_61">
-                                        بيشتر اوقات حقايق ( آنچه که بايد وجود داشته باشد ) را در ذهن و تخيل خود مجسم مي کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="7">
-                            <div class="number">
-                                <p>۷</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_71" name="question_7" type="radio" value="T">
-                                    <label for="question_71">
-                                        از نظر من يک قاضی و داور عادل براي جامعه مفيدتر است.
-
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_70" name="question_7" type="radio" value="F">
-                                    <label for="question_70">
-                                        از نظر من يک معلم و مربی مهربان برای جامعه مفيدتر است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="8">
-                            <div class="number">
-                                <p>۸</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_80" name="question_8" type="radio" value="P">
-                                    <label for="question_80">
-                                        ترجيحاً ملاقاتها و ديدارهای خود را بدون برنامه قبلی و آزادانه انجام می دهم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_81" name="question_8" type="radio" value="J">
-                                    <label for="question_81">
-                                        ترجيحاً ديدار با افراد و وعده ملاقات خود را از پيش تعيين می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="9">
-                            <div class="number">
-                                <p>۹</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_90" name="question_9" type="radio" value="I">
-                                    <label for="question_90">
-                                        کم حرف و محتاط هستم و علاقه ای به جلب توجه ديگران به خود ندارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_91" name="question_9" type="radio" value="E">
-                                    <label for="question_91">
-                                        توجه ديگران را به خود جلب می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="10">
-                            <div class="number">
-                                <p>۱۰</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_100" name="question_10" type="radio" value="S">
-                                    <label for="question_100">
-                                        اگر معلم بودم ترجيح می دادم دروسي را تدريس کنم که واقعيات و امور قطعی وعينی را شامل شوند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_101" name="question_10" type="radio" value="N">
-                                    <label for="question_101">
-                                        اگر معلم بودم، ترجيحاً دروسی را تدريس می کردم که حقايق و نظريه ها و تئوری ها را شامل شوند (مانند فلسفه).
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="11">
-                            <div class="number">
-                                <p>۱۱</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_111" name="question_11" type="radio" value="T">
-                                    <label for="question_111">
-                                        قاطع، محکم و استوار هستم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_110" name="question_11" type="radio" value="F">
-                                    <label for="question_110">
-                                        انعطاف پذير ، ملايم و لطيف هستم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="12">
-                            <div class="number">
-                                <p>۱۲</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_120" name="question_12" type="radio" value="P">
-                                    <label for="question_120">
-                                        غالباً انجام کارهای پيش پا افتاده و جزئی را فراموش می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_121" name="question_12" type="radio" value="J">
-                                    <label for="question_121">
-                                        به منظور جلوگيری از فراموش شدن انجام کارها، آن ها را يادداشت می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="13">
-                            <div class="number">
-                                <p>۱۳</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_130" name="question_13" type="radio" value="I">
-                                    <label for="question_130">
-                                        در مهمانی ها، جلسات وگردهمايی ها منتظر مي مانم تا ديگران به سوی من بيايند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_131" name="question_13" type="radio" value="E">
-                                    <label for="question_131">
-                                        در مهماني ها، جلسات وگردهمايی ها من سر صحبت را با ديگران باز می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="14">
-                            <div class="number">
-                                <p>۱۴</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_140" name="question_14" type="radio" value="S">
-                                    <label for="question_140">
-                                        به جزئيات امور توجه زيادی دارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_141" name="question_14" type="radio" value="N">
-                                    <label for="question_141">
-                                        بيشتر کليت هر موضوعی برايم مهم است و به جزئيات آن توجه زيادی نمی کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="15">
-                            <div class="number">
-                                <p>۱۵</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_151" name="question_15" type="radio" value="T">
-                                    <label for="question_151">
-                                        به آينده اهميت زيادی داده و  برای آن برنامه ريزی می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_150" name="question_15" type="radio" value="F">
-                                    <label for="question_150">
-                                        خيلی به آينده فکر نمی کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="16">
-                            <div class="number">
-                                <p>۱۶</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_160" name="question_16" type="radio" value="P">
-                                    <label for="question_160">
-                                        معمولاً کارها را شروع می کنم و حين اجرا به رفع اشکالات اجرايی وتدارک مورد نياز می پردازم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_161" name="question_16" type="radio" value="J">
-                                    <label for="question_161">
-                                        قبل از اجرای طرح ها وکارها برنامه ريزی  انجام می دهم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="17">
-                            <div class="number">
-                                <p>۱۷</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_170" name="question_17" type="radio" value="I">
-                                    <label for="question_170">
-                                        مايل هستم دوستان کم همراه با ارتباط زياد و صميمانه داشته باشم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_171" name="question_17" type="radio" value="E">
-                                    <label for="question_171">
-                                        مايل هستم دوستان زياد همراه با ارتباط محدود داشته باشم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="18">
-                            <div class="number">
-                                <p>۱۸</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_180" name="question_18" type="radio" value="S">
-                                    <label for="question_180">
-                                        به استفاده از امکانات و توانايی های موجود تاکيد دارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_181" name="question_18" type="radio" value="N">
-                                    <label for="question_181">
-                                        نوآوری و خلاقيت داشتن در کارها برايم اولويت دارد.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="19">
-                            <div class="number">
-                                <p>۱۹</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_191" name="question_19" type="radio" value="T">
-                                    <label for="question_191">
-                                        بيشتر پيرو منطق و دليل هستم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_190" name="question_19" type="radio" value="F">
-                                    <label for="question_190">
-                                        بيشتر پيرو احساس و عاطفه هستم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="20">
-                            <div class="number">
-                                <p>۲۰</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_200" name="question_20" type="radio" value="P">
-                                    <label for="question_200">
-                                        در انجام کارهايی که از قبل پيش بينی نشده و يا فعاليت هايی که به سرعت و عکس العمل فوری نياز دارد، موفق هستم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_201" name="question_20" type="radio" value="J">
-                                    <label for="question_201">
-                                        در انجام کارهايی که بر اساس طرح و برنامه قبلی مي باشد موفق هستم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="21">
-                            <div class="number">
-                                <p>۲۱</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_210" name="question_21" type="radio" value="I">
-                                    <label for="question_210">
-                                        به طور معمول دوستان کمی داشته ولي روابط صميمانه ای با آنها دارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_211" name="question_21" type="radio" value="E">
-                                    <label for="question_211">
-                                        به طور معمول با افراد زيادی دوستی و آشنايی دارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="22">
-                            <div class="number">
-                                <p>۲۲</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_220" name="question_22" type="radio" value="S">
-                                    <label for="question_220">
-                                        عمدتا از زندگی در زمان حال لذت زيادی برده و خيلي به آينده فکر نمی کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_221" name="question_22" type="radio" value="N">
-                                    <label for="question_221">
-                                        به آينده توجه زيادي داشته و آن را پيش بيني مي کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="23">
-                            <div class="number">
-                                <p>۲۳</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_231" name="question_23" type="radio" value="T">
-                                    <label for="question_231">
-                                        معمولا مغز من بر قلب من حاکم است.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_230" name="question_23" type="radio" value="F">
-                                    <label for="question_230">
-                                        معمولا قلب من بر مغز من حاکم است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="24">
-                            <div class="number">
-                                <p>۲۴</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_240" name="question_24" type="radio" value="P">
-                                    <label for="question_240">
-                                        معمولاً در کارهای روزانه مايلم بر حسب ضرورتها و فوريت هايی که پيش می آيد عمل کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_241" name="question_24" type="radio" value="J">
-                                    <label for="question_241">
-                                        معمولاً در کارهاي روزانه مايلم که طبق برنامه عمل کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="25">
-                            <div class="number">
-                                <p>۲۵</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_250" name="question_25" type="radio" value="I">
-                                    <label for="question_250">
-                                        از احساسات و عواطف درونی خود کمتر با ديگران صحبت می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_251" name="question_25" type="radio" value="E">
-                                    <label for="question_251">
-                                        افکار و عواطف خود را آزاد و راحت بيان می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="26">
-                            <div class="number">
-                                <p>۲۶</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_260" name="question_26" type="radio" value="S">
-                                    <label for="question_260">
-                                        کلمات مشخص و دقيق را ترجيح داده و بکار مي برم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_261" name="question_26" type="radio" value="N">
-                                    <label for="question_261">
-                                        کلمات تمثيلی و کنايه ای را ترجيح داده و بکار می برم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="27">
-                            <div class="number">
-                                <p>۲۷</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_271" name="question_27" type="radio" value="T">
-                                    <label for="question_271">
-                                        در تصميم گيری ها رعايت عدالت و انصاف از همه چيز برايم مهم تر است.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_270" name="question_27" type="radio" value="F">
-                                    <label for="question_270">
-                                        در تصميم گيری ها رعايت حال و شرايط ديگران از همه چيز برايم مهم تر است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="28">
-                            <div class="number">
-                                <p>۲۸</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_280" name="question_28" type="radio" value="P">
-                                    <label for="question_280">
-                                        معمولاً کارها را شروع می کنم و در حين اجرا به رفع مشکلات پيش آمده می پردازم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_281" name="question_28" type="radio" value="J">
-                                    <label for="question_281">
-                                        معمولاً قبل از شروع کارها مقدمات کار را آماده و مشکلات را پيش بينی می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="29">
-                            <div class="number">
-                                <p>۲۹</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_290" name="question_29" type="radio" value="I">
-                                    <label for="question_290">
-                                        کارهای فردی را ترجيح می دهم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_291" name="question_29" type="radio" value="E">
-                                    <label for="question_291">
-                                        کارهای گروهی را ترجيح می دهم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="30">
-                            <div class="number">
-                                <p>۳۰</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_300" name="question_30" type="radio" value="S">
-                                    <label for="question_300">
-                                        واقعيات ( آنچه که هست ) و پديده ها برايم جالب اند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_301" name="question_30" type="radio" value="N">
-                                    <label for="question_301">
-                                        حقايق ( آنچه که بايد باشد) و ايده ها برايم جالب اند.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="31">
-                            <div class="number">
-                                <p>۳۱</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_311" name="question_31" type="radio" value="T">
-                                    <label for="question_311">
-                                        برای عدل و انصاف ارزش زيادی قائلم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_310" name="question_31" type="radio" value="F">
-                                    <label for="question_310">
-                                        برای بذل و بخشش ارزش زيادی قائلم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="32">
-                            <div class="number">
-                                <p>۳۲</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_320" name="question_32" type="radio" value="P">
-                                    <label for="question_320">
-                                        تهيه فهرست از کار هايی که بايد در روز تعطيل انجام داد را کاری بيهوده و عبث می دانم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_321" name="question_32" type="radio" value="J">
-                                    <label for="question_321">
-                                        تهيه فهرست از کارهايی که بايد در روز تعطيل انجام داد را کاری جدی و سودمند می دانم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="33">
-                            <div class="number">
-                                <p>۳۳</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_330" name="question_33" type="radio" value="I">
-                                    <label for="question_330">
-                                        معمولاً در مهمانی ها و مجالس با شخص يا اشخاصی که از قبل می شناسم گفتگو می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_331" name="question_33" type="radio" value="E">
-                                    <label for="question_331">
-                                        معمولاً در مهمانی ها و مجالس به دنبال اشخاص جديدی هستم تا با آنها گفتگو کرده و آشنا شوم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="34">
-                            <div class="number">
-                                <p>۳۴</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_340" name="question_34" type="radio" value="S">
-                                    <label for="question_340">
-                                        دوستان من اکثراً واقع گرا و واقع بين هستند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_341" name="question_34" type="radio" value="N">
-                                    <label for="question_341">
-                                        دوستان من اکثراً کسانی هستند که قوه تخيل قوی دارند.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="35">
-                            <div class="number">
-                                <p>۳۵</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_351" name="question_35" type="radio" value="T">
-                                    <label for="question_351">
-                                        به نظر من فردی که با دلايل و استدلال با موضوعات برخورد می کند، بهتر است.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_350" name="question_35" type="radio" value="F">
-                                    <label for="question_350">
-                                        به نظر من فردی که با عاطفه و احساس واقعی و دلسوزی با موضوعات برخورد می کند، بهتر است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="36">
-                            <div class="number">
-                                <p>۳۶</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_360" name="question_36" type="radio" value="P">
-                                    <label for="question_360">
-                                        غالباً خود را ملزم به انجام کارها در سر وقت معين و مشخص ندانسته و خود را در محدوده زمان مقيد نمی کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_361" name="question_36" type="radio" value="J">
-                                    <label for="question_361">
-                                        غالباً برنامه خود را  به طور مشخص و دقيق تعيين کرده و بر انجام آنها در سر وقت مقرر اصرار می ورزم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="37">
-                            <div class="number">
-                                <p>۳۷</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_370" name="question_37" type="radio" value="I">
-                                    <label for="question_370">
-                                        آرام و متفکر هستم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_371" name="question_37" type="radio" value="E">
-                                    <label for="question_371">
-                                        با نشاط و فعال هستم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="38">
-                            <div class="number">
-                                <p>۳۸</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_380" name="question_38" type="radio" value="S">
-                                    <label for="question_380">
-                                        دوست دارم فردی واقع گرا و دقيق باشم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_381" name="question_38" type="radio" value="N">
-                                    <label for="question_381">
-                                        دوست دارم فردی مبتکر و خلاق باشم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="39">
-                            <div class="number">
-                                <p>۳۹</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_391" name="question_39" type="radio" value="T">
-                                    <label for="question_391">
-                                        به تجزيه وتحليل موضوعات علاقه دارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_390" name="question_39" type="radio" value="F">
-                                    <label for="question_390">
-                                        به فيلم ها و بحث های عاطفی که به مسائل انسانی می پردازند، علاقه دارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="40">
-                            <div class="number">
-                                <p>۴۰</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_400" name="question_40" type="radio" value="P">
-                                    <label for="question_400">
-                                        معمولاً زندگی خود را با توجه به اوضاع واحوالی که پيش مي آيد ، تنظيم و اداره می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_401" name="question_40" type="radio" value="J">
-                                    <label for="question_401">
-                                        معمولاً کارهايی را که مايل به انجام آن هستم يادداشت کرده يا حداقل به طور مرتب به خاطر می سپارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="41">
-                            <div class="number">
-                                <p>۴۱</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_410" name="question_41" type="radio" value="I">
-                                    <label for="question_410">
-                                        کم حرف هستم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_411" name="question_41" type="radio" value="E">
-                                    <label for="question_411">
-                                        خوش صحبت هستم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="42">
-                            <div class="number">
-                                <p>۴۲</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_420" name="question_42" type="radio" value="S">
-                                    <label for="question_420">
-                                        هر ايده جديدی را اگر قابل اجرا باشد می پذيرم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_421" name="question_42" type="radio" value="N">
-                                    <label for="question_421">
-                                        براي هر ايده جديدی به دليل نو بودن آن (بدون توجه به اجرايی بودن يا نبودن آن) ارزش زيادی قائل هستم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="43">
-                            <div class="number">
-                                <p>۴۳</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_431" name="question_43" type="radio" value="T">
-                                    <label for="question_431">
-                                        دوست دارم فردی متفکر باشم که عاقلانه رفتار می کند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_430" name="question_43" type="radio" value="F">
-                                    <label for="question_430">
-                                        دوست دارم فردی عاطفی باشم که با احساسات انسانی رفتار می کند.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="44">
-                            <div class="number">
-                                <p>۴۴</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_440" name="question_44" type="radio" value="P">
-                                    <label for="question_440">
-                                        بعضی افراد مرا آدمی بی نظم و دارای زندگی شلوغ می دانند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_441" name="question_44" type="radio" value="J">
-                                    <label for="question_441">
-                                        بعضی افراد مرا آدمی خشک و غير قابل انعطاف می دانند.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="45">
-                            <div class="number">
-                                <p>۴۵</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_450" name="question_45" type="radio" value="I">
-                                    <label for="question_450">
-                                        پس از مکث و تأمل کافی، نسبت به بحث يا سؤالات مطرح شده  اظهار نظر مي کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_451" name="question_45" type="radio" value="E">
-                                    <label for="question_451">
-                                        در هر لحظه که فرصت شد سؤالات را مطرح يا نظر خود را اعلام می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="46">
-                            <div class="number">
-                                <p>۴۶</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_460" name="question_46" type="radio" value="S">
-                                    <label for="question_460">
-                                        ثبات و استحکام را دوست دارم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_461" name="question_46" type="radio" value="N">
-                                    <label for="question_461">
-                                        تغيير و انعطاف را دوست دارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="47">
-                            <div class="number">
-                                <p>۴۷</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_471" name="question_47" type="radio" value="T">
-                                    <label for="question_471">
-                                        بيشتر از نتيجه گيری های منطقی و استدلال استفاده می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_470" name="question_47" type="radio" value="F">
-                                    <label for="question_470">
-                                        بيشتر بر اساس عواطف و عقايد شخصی نسبت به زندگی يا افراد عمل می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="48">
-                            <div class="number">
-                                <p>۴۸</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_480" name="question_48" type="radio" value="P">
-                                    <label for="question_480">
-                                        هر وقت که مناسب بود و فرصت دست داد نسبت به انجام کارها آزادانه و بدون فشار اقدام می کنم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_481" name="question_48" type="radio" value="J">
-                                    <label for="question_481">
-                                        اين مهم است که از قبل بدانم چه کاری يا چه چيزی از من انتظار دارند تا به انجام آنها بپردازم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="49">
-                            <div class="number">
-                                <p>۴۹</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_490" name="question_49" type="radio" value="I">
-                                    <label for="question_490">
-                                        ترجيح می دهم در جمع افراد توسط فرد ديگری معرفی شوم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_491" name="question_49" type="radio" value="E">
-                                    <label for="question_491">
-                                        معمولاً در جمع، ديگران را به يکديگر معرفی می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="50">
-                            <div class="number">
-                                <p>۵۰</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_500" name="question_50" type="radio" value="S">
-                                    <label for="question_500">
-                                        تلاش می کنم با رعايت ترتيب، مراحل پيش بينی شده کارها را انجام دهم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_501" name="question_50" type="radio" value="N">
-                                    <label for="question_501">
-                                        هنگام انجام دادن کارها از قسمت های بی اهميت آن صرف نظر می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="51">
-                            <div class="number">
-                                <p>۵۱</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_511" name="question_51" type="radio" value="T">
-                                    <label for="question_511">
-                                        نسبت به هر گروه يا افراد سازمانی که با آنها کار می کنم ، براساس تجزيه وتحليل دقيق اوضاع و اطلاعات موجود اظهار نظر می کنم
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_510" name="question_51" type="radio" value="F">
-                                    <label for="question_510">
-                                        نسبت به هر گروه يا افراد سازمانی که با آنها کار می کنم ، براساس درک نيازهايشان، عواطف انسانی و خود را به جاي آنها گذاشتن اظهار نظر می کنم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="52">
-                            <div class="number">
-                                <p>۵۲</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_520" name="question_52" type="radio" value="P">
-                                    <label for="question_520">
-                                        معمولاً بدون فوت وقت يک کار يا پروژه را شروع و به هر قسمتی از آن که ممکن باشد زودتر می پردازم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_521" name="question_52" type="radio" value="J">
-                                    <label for="question_521">
-                                        معمولاً در انجام کارها آنها را به اجزاي مشخص تقسيم کرده وسپس به ترتيب به انجام بخش های مشخص شده می پردازم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="53">
-                            <div class="number">
-                                <p>۵۳</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_530" name="question_53" type="radio" value="I">
-                                    <label for="question_530">
-                                        به کارهای فردی ( يا حداکثر با يکی دو نفر ديگر ) علاقمندم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_531" name="question_53" type="radio" value="E">
-                                    <label for="question_531">
-                                        به کارهای گروهی علاقمندم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="54">
-                            <div class="number">
-                                <p>۵۴</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_540" name="question_54" type="radio" value="S">
-                                    <label for="question_540">
-                                        يکي از اشکالات اساسی زندگی من، يکنواختی وچسبيدن به برنامه و کار مشخص بوده است.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_541" name="question_54" type="radio" value="N">
-                                    <label for="question_541">
-                                        يکي از اشکالات اساسی زندگی من از شاخه ای به شاخه ای پريدن و داشتن برنامه های متعدد بوده است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="55">
-                            <div class="number">
-                                <p>۵۵</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_551" name="question_55" type="radio" value="T">
-                                    <label for="question_551">
-                                        قاطع بودن برای من الويت است.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_550" name="question_55" type="radio" value="F">
-                                    <label for="question_550">
-                                        ملايم و احساسی بودن برای من الويت است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="56">
-                            <div class="number">
-                                <p>۵۶</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_560" name="question_56" type="radio" value="P">
-                                    <label for="question_560">
-                                        علاقمندم جلسات و گردهمايی ها هنگامی شروع شود که همگی افراد حضور و آمادگی لازم را داشته و احساس راحتي کنند.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_561" name="question_56" type="radio" value="J">
-                                    <label for="question_561">
-                                        علاقه‌مندم جلسات رأس ساعت مقرر شروع شود و روي وقت‌شناسی تأکيد دارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="57">
-                            <div class="number">
-                                <p>۵۷</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_570" name="question_57" type="radio" value="I">
-                                    <label for="question_570">
-                                        از نظر ديگران ممکن است تا حدی گوشه گير به نظر برسم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_571" name="question_57" type="radio" value="E">
-                                    <label for="question_571">
-                                        از نظر ديگران ممکن است  فردی  خوش صحبت به نظر برسم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="58">
-                            <div class="number">
-                                <p>۵۸</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_580" name="question_58" type="radio" value="S">
-                                    <label for="question_580">
-                                        کارها را با نظم و ترتيب و مرحله به مرحله انجام می دهم.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_581" name="question_58" type="radio" value="N">
-                                    <label for="question_581">
-                                        قسمت های مهم و جالب کار را زودتر انجام می دهم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="59">
-                            <div class="number">
-                                <p>۵۹</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_591" name="question_59" type="radio" value="T">
-                                    <label for="question_591">
-                                        رعايت اصول و قوانين برايم بسيار مهم است.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_590" name="question_59" type="radio" value="F">
-                                    <label for="question_590">
-                                        مهربانی و گذشت در زندگی برايم بسيار مهم است.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="q-no-answer m-t-30" id="60">
-                            <div class="number">
-                                <p>۶۰</p>
-                            </div>
-                            <h2 class="question">عبارات</h2>
-                            <div class="answer col-lg-11 col-md-10">
-                                <div class="radio radio-orange">
-                                    <input id="question_600" name="question_60" type="radio" value="P">
-                                    <label for="question_600">
-                                        مقيد بودن به برنامه ای که از قبل مشخص شده باشد براي من جالب نيست.
-                                    </label>
-                                </div>
-                                <div class="radio radio-orange">
-                                    <input id="question_601" name="question_60" type="radio" value="J">
-                                    <label for="question_601">
-                                        از انجام دادن کارهايی که از قبل مشخص شده باشد احساس رضايت دارم.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </form>
-                </div>
-
             </div>
         </div>
     </div>
-</div>
 
 
 
@@ -1265,4 +1210,7 @@
 
 
 
-</body></html>
+</body>
+
+
+{% endblock %}
