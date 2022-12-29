@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from studentInfo.models import User
+from django.contrib import messages
 # Create your views here.
 
 def mbti_test(request):
@@ -19,7 +20,7 @@ def mbti_test(request):
     character = ''
     if request.method=='POST':
         for i in range(60):
-            values.append(request.POST['question_{}'.format(i+1)])
+            values.append(request.POST.get('question_{}'.format(i+1)))
 
     for i in range(len(values)):
         if values[i] == 'e':
@@ -56,4 +57,10 @@ def mbti_test(request):
     else:
         personality_type += 'p'
 
-    return personality_type
+
+    user=User.objects.order_by('-last_login').first()
+    user.personal_type=personality_type
+    user.save()
+    messages.info(request,"تیپ شخصیتی شما {}".format(personality_type))
+
+    return render(request, 'exam.html')
