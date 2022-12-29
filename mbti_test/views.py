@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from studentInfo.models import User
 from django.contrib import messages
-# Create your views here.
+
+
+def mbti_test(request):
+    return render(request,'mbti-questions.html')
 
 def mbti_test(request):
     values = []

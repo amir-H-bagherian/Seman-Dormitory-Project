@@ -66,5 +66,7 @@ def farhikhtegan_page(request):
 
 def kosar_page(request):
     return render(request, 'kosar.html')
-def mbti_test(request):
-    return render(request,'mbti-questions.html')
+
+@login_required(login_url='index')
+def pre_exam_page(request):
+    return render(request, 'pre-exam.html')
