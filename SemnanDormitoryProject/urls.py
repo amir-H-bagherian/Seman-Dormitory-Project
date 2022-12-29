@@ -24,7 +24,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('studentInfo.urls')),
-    path('',include('mbti_test.urls')),
 ]
 
 
