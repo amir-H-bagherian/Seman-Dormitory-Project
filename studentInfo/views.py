@@ -25,9 +25,9 @@ def read_from_excel():
 def login_user(request):
     
     if request.method == 'POST':
-        student_id = request.POST['student_id']
-        national_code = request.POST['national_code']
-        email = request.POST['email']
+        student_id = request.POST.get('student_id')
+        national_code = request.POST.get('national_code')
+        email = request.POST.get('email')
         #users = read_from_excel()
         
         # If student has registered before and wants to regsiter again for whatever reason
