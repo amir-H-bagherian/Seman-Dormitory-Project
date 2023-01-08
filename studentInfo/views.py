@@ -28,7 +28,7 @@ def login_user(request):
         student_id = request.POST.get('student_id')
         national_code = request.POST.get('national_code')
         email = request.POST.get('email')
-        #users = read_from_excel()
+        users = read_from_excel()
         
         # If student has registered before and wants to regsiter again for whatever reason
         # Delete the student's record and rebuild a record for the student.
