@@ -12,7 +12,7 @@ def read_from_excel():
     dataframe = openpyxl.load_workbook("Book1.xlsx")
     sheet = dataframe.active
     
-    for i in range(2, sheet.max_row + 1):
+    for i in range(1, sheet.max_row + 1):
         lst = []
         for j in range(1, sheet.max_column + 1):
             cell_obj = sheet.cell(row=i, column=j)
