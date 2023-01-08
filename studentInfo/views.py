@@ -25,8 +25,8 @@ def read_from_excel():
 def login_user(request):
     
     if request.method == 'POST':
-        student_id = request.POST.get('student_id')
-        national_code = request.POST.get('national_code')
+        student_id = int(request.POST.get('student_id'))
+        national_code = int(request.POST.get('national_code'))
         email = request.POST.get('email')
         users = read_from_excel()
         
@@ -39,7 +39,7 @@ def login_user(request):
         except:
             pass
         
-        if True: #national_id in users.keys() and users[national_id] == student_id:
+        if national_code in users.keys() and users[national_code] == student_id:
             
             new_user = User(national_code=national_code, student_id=student_id, email=email)
             new_user.save()
@@ -48,7 +48,7 @@ def login_user(request):
             return redirect('homepage') # go to the next page
         else:
             messages.error(request, "Invalid Input!")
-            # return redirect('front/') # go to student does not exist in file page
+            return redirect('index') # go to student does not exist in file page
     
     return render(request, 'index.html')
 
