@@ -47,8 +47,7 @@ def login_user(request):
 
             return redirect('homepage') # go to the next page
         else:
-            messages.error(request, "Invalid Input!")
-            return redirect('index') # go to student does not exist in file page
+            messages.error(request, "شماره دانشجویی یا کدملی وارد شده نامعتبر است")
     
     return render(request, 'index.html')
 
@@ -61,12 +60,68 @@ def home_page(request):
 def farzanegan_page(request):
     return render(request, 'farzanegan.html')
 
+
 def farhikhtegan_page(request):
     return render(request, 'farhikhtegan.html')
+
 
 def kosar_page(request):
     return render(request, 'kosar.html')
 
+
+@login_required(login_url='index')
+def disabled_request_page(request):
+    return render(request, 'disabled.html')
+
+
+@login_required(login_url='index')
+def shared_room(request):
+    return render(request, 'request-shared-room.html')
+
+
 @login_required(login_url='index')
 def pre_exam_page(request):
     return render(request, 'pre-exam.html')
+
+
+@login_required(login_url='index')
+def submit_user_type(request):
+    personal_type = request.POST.get('personalType')
+    user = request.user
+    user.personal_type = personal_type
+    user.save()
+    return redirect('behavior-test')
+
+
+@login_required(login_url='index')
+def behavior_test_page(request):
+    context = {}
+    return render(request, 'behavior-test.html', context)
+
+
+@login_required(login_url='index')  
+def process_user_lifestyle(request):
+    user_bed_time_option = request.POST.get('bedTime')
+    user_cigarette_option = request.POST.get('cigaretteStatus')
+    user_tidyness_option = request.POST.get('tidynessStatus')
+    
+    bed_time_options = {
+        'opt1': 'before12',
+        'opt2': 'before2',
+        'opt3': 'no-exact-time'}
+    cigarette_options = {
+        'opt1': True,
+        'opt2': True,
+        'opt3': False
+    }
+    tidyness_options = {
+        'opt1': 'tidy',
+        'opt2': 'semi-tidy',
+        'opt3': 'untidy'
+    }
+    
+    request.user.bed_time = bed_time_options[user_bed_time_option]
+    request.user.cigarette_status = cigarette_options[user_cigarette_option]
+    request.user.tidyness_status = tidyness_options[user_tidyness_option]
+    request.user.save()
+    return redirect('final-page')

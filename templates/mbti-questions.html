@@ -17,8 +17,10 @@
                 </div>
 
                 <div class="question-body">
-                    <form method="post" class="form-box" id="assessment-questions"
-                        action="../mbti_result">
+
+                    <form method="POST" class="form-box" id="assessment-questions" action="mbti_result/">
+                        {% csrf_token %}
+
                         <div class="q-no-answer m-t-30" id="1">
                             <div class="number mt-3">
                                     <p> عبارت ۱</p>
@@ -1191,9 +1193,9 @@
 
 
 
-
+                        <button type="submit" class="btn btn-primary">ثبت</button>
                     </form>
-                    <button type="submit" class="btn btn-primary">ثبت</button>
+
                 </div>
 
             </div>

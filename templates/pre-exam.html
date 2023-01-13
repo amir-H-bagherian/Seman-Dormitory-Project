@@ -39,34 +39,36 @@
                 <h4 class="card-title">  از تایپ شخصیتی خود آگاه هستم</h4>
                   <p class="card-text">
                     در
-                    <a href="https://www.16personalities.com/fa/%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D8%B4%D8%AE%D8%B5%DB%8C%D8%AA"
-                      class="text-decoration-none"> آزمون MBTI</a>
+                   آزمون MBTI
                     شرکت کرده ام و تایپ شخصیتی خود را می دانم (تایپ شخصیتی خود را از منوی زیر انتخاب کنید و بر روی دکمه ثبت
                     کلیک کنید.)
                   </p>
-                  <div class="mb-3">
-                    <label for="" class="form-label myfrom"></label>
-                    <select class="form-select form-select-lg" name="" id="">
-                      <option selected>انتخاب کنید</option>
-                      <option value="">ESTJ</option>
-                      <option value="">ENTJ</option>
-                      <option value="">ESFJ</option>
-                      <option value="">ENFJ</option>
-                      <option value="">ISTJ</option>
-                      <option value="">ISFJ</option>
-                      <option value="">INTJ</option>
-                      <option value="">INFJ</option>
-                      <option value="">ESTP</option>
-                      <option value="">ESFP</option>
-                      <option value="">ENTP</option>
-                      <option value="">ENFP</option>
-                      <option value="">ISTP</option>
-                      <option value="">ISFP</option>
-                      <option value="">INTP</option>
-                      <option value="">INFP</option>
-                    </select>
-                  </div>
-                 <button class="btn btn-primary card-link" type="submit"> ثبت </button>
+                  <form method="POST" action="../submit_user_type/">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                      <label for="" class="form-label myfrom"></label>
+                      <select class="form-select form-select-lg" name="personalType" id="">
+                        <option selected>انتخاب کنید</option>
+                        <option value="ESTJ">ESTJ</option>
+                        <option value="ENTJ">ENTJ</option>
+                        <option value="ESFJ">ESFJ</option>
+                        <option value="ENFJ">ENFJ</option>
+                        <option value="ISTJ">ISTJ</option>
+                        <option value="ISFJ">ISFJ</option>
+                        <option value="INTJ">INTJ</option>
+                        <option value="INFJ">INFJ</option>
+                        <option value="ESTP">ESTP</option>
+                        <option value="ESFP">ESFP</option>
+                        <option value="ENTP">ENTP</option>
+                        <option value="ENFP">ENFP</option>
+                        <option value="ISTP">ISTP</option>
+                        <option value="ISFP">ISFP</option>
+                        <option value="INTP">INTP</option>
+                        <option value="INFP">INFP</option>
+                      </select>
+                    </div>
+                    <button class="btn btn-primary card-link" type="submit"> ثبت </button>
+                </form>
               </div>
             </div>
           </div>
@@ -76,8 +78,8 @@
                 <h4 class="card-title"> تایپ شخصیتی خود را نمی دانم</h4>
                  <p class="card-text"> برای شروع آزمون سامانه بر روی دکمه ورود به صفحه آزمون کلیک کنید  در غیر این صورت در آزمون اصلی MBTI شرکت کنید و سپس تایپ شخصیت خود را ثبت کنید.</p>
                  <div class="mytest"> 
-                   <button type="submit" class="btn btn-primary top-50 mytest">ورود به صفحه آزمون</button>
-                   <button class="btn btn-primary card-link"><a class ="nav-link" href="https://www.16personalities.com/free-personality-test "> شرکت در آزمون اصلی MBTI</a></button>
+                  <a class ="nav-link" href="../mbti_test/"><button class="btn btn-primary top-50 mytest">ورود به صفحه آزمون سامانه</button></a>
+                  <a class ="nav-link" href="https://www.16personalities.com/fa/"><button class="btn btn-primary card-link"> شرکت در آزمون اصلی MBTI</button></a>
                  </div>
               </div>
             </div>

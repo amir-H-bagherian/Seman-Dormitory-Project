@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body dir="rtl">
+	<div class="container">
+		<div class=" justify-content-center col  d-flex">
+			<div class="col-8 justify-content-center ">
+
+				<form method="POST" action="../process-user-lifestyle/">
+					{% csrf_token %}
+					<div class="form-check p-5 border border-5">
+						<h4>1 .شما نسبت به سیگار کشیدن هم اتاقیتان چه نظری دارید؟
+						</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="cigaretteStatus" id="option1" value="opt1">
+							<label class="form-check-label" for="option1">
+							a .سیگاری هستم و مشکلی ندارم.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="cigaretteStatus" id="option2" value="opt2">
+							<label class="form-check-label" for="option2">
+							b .سیگاری نیستم ولی با دود سیگار مشکلی ندارم.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="cigaretteStatus" id="option3" value="opt3">
+							<label class="form-check-label" for="option3">
+							c .سیگاری نیستم و به شدت با دود سیگار مشکل دارم.
+							</label>
+						</div>
+					</div>
+				
+					<div class="form-check p-5 border border-5 ">
+						<h4>
+							2 .از نظر شما نظم و مرتب بودن اتاق به چه میزان اهمیت دارد؟ 
+						</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tidynessStatus" id="option1" value="opt1">
+							<label class="form-check-label" for="option1">
+							a .آدم منظمی هستم و مرتب بودن اتاق بسیار زیاد برایم اهمیت جدی دارد. 
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tidynessStatus" id="option2" value="opt2">
+							<label class="form-check-label" for="option2">
+							b. نظم اتاق نسبتا برایم مهم است. 
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tidynessStatus" id="option3" value="opt3">
+							<label class="form-check-label" for="option3">
+							c. بنظرم به هم ریختگی اتاق مشکل جدی نیست. 
+							</label>
+						</div>
+					</div>		
+					
+					<div class="form-check p-5 border border-5">
+						<h4>1 .شما چه ساعتی در شب می خوابید؟
+						</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="bedTime" id="option1" value="opt1">
+							<label class="form-check-label" for="option1">
+							a .قبل از ساعت 12.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="bedTime" id="option2" value="opt2">
+							<label class="form-check-label" for="option2">
+							b .قبل از ساعت 2.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="bedTime" id="option3" value="opt3">
+							<label class="form-check-label" for="option3">
+							c .ساعت مشخصی برای خواب ندارم .
+							</label>
+						</div>
+					</div>
+
+					<div>
+						<button type="submit" class="btn btn-primary float-end ">ثبت</button>
+					</div>
+				</form>
+
+			</div>	  
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+</body>
+
+{% endblock %}

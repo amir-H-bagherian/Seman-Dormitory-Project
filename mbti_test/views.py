@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from studentInfo.models import User
 from django.contrib import messages
@@ -7,7 +7,7 @@ from django.contrib import messages
 def mbti_test(request):
     return render(request,'mbti-questions.html')
 
-def mbti_test(request):
+def mbti_result(request):
     values = []
     e = 0  # Extravert
     i = 0  # Introvert
@@ -61,9 +61,10 @@ def mbti_test(request):
         personality_type += 'p'
 
 
-    user=User.objects.order_by('-last_login').first()
-    user.personal_type=personality_type
+    user = request.user
+    user.personal_type = personality_type
     user.save()
-    messages.info(request,"تیپ شخصیتی شما {}".format(personality_type))
+    
+    # messages.info(request,"تیپ شخصیتی شما {}".format(personality_type))
 
-    return render(request, 'exam.html')
+    return redirect('behavior-test')
