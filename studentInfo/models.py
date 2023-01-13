@@ -10,8 +10,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         app_label = 'studentInfo'
         
-    student_id = models.IntegerField()
-    national_code = models.IntegerField(primary_key=True)
+    student_id = models.CharField(max_length=10)
+    national_code = models.CharField(max_length=15, primary_key=True)
     cigarette_status = models.BooleanField(null=True)
     bed_time = models.CharField(max_length=15,null=True)
     tidyness_status = models.CharField(max_length=15,null=True)
