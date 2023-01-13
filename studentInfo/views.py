@@ -7,29 +7,36 @@ from django.contrib.auth import login
 
 
 def read_from_excel():
-    
     users = {}
     dataframe = openpyxl.load_workbook("Book1.xlsx")
     sheet = dataframe.active
-    
+
     for i in range(1, sheet.max_row + 1):
         lst = []
         for j in range(1, sheet.max_column + 1):
             cell_obj = sheet.cell(row=i, column=j)
             lst.append(cell_obj.value)
-        users.update({lst[0]: lst[1]})
-        
+        lst1 = list(map(str, lst))
+        users.update({lst1[0]: lst1[1]})
+
     return users
 
 
+def check_length(national_code, student_id):
+    if len(national_code) == 10 and len(student_id) == 10:
+        return True
+    else:
+        return False
+
+
 def login_user(request):
-    
     if request.method == 'POST':
-        student_id = int(request.POST.get('student_id'))
-        national_code = int(request.POST.get('national_code'))
+        student_id = request.POST.get('student_id')
+        national_code = request.POST.get('national_code')
         email = request.POST.get('email')
+        length_is_valid = check_length(national_code, student_id)
         users = read_from_excel()
-        
+
         # If student has registered before and wants to regsiter again for whatever reason
         # Delete the student's record and rebuild a record for the student.
         # We do this since we do not have and do not want to have acounts for our users.
@@ -38,17 +45,19 @@ def login_user(request):
             user.delete()
         except:
             pass
-        
-        if national_code in users.keys() and users[national_code] == student_id:
-            
+
+        if length_is_valid == True and national_code in users.keys() and users[national_code] == student_id:
+
             new_user = User(national_code=national_code, student_id=student_id, email=email)
             new_user.save()
             login(request, new_user)
 
-            return redirect('homepage') # go to the next page
+            return redirect('homepage')  # go to the next page
+        elif not length_is_valid:
+            messages.error(request, "طول شماره دانشجویی یا کدملی وارد شده نامعتبر است")
         else:
             messages.error(request, "شماره دانشجویی یا کدملی وارد شده نامعتبر است")
-    
+
     return render(request, 'index.html')
 
 
@@ -99,12 +108,12 @@ def behavior_test_page(request):
     return render(request, 'behavior-test.html', context)
 
 
-@login_required(login_url='index')  
+@login_required(login_url='index')
 def process_user_lifestyle(request):
     user_bed_time_option = request.POST.get('bedTime')
     user_cigarette_option = request.POST.get('cigaretteStatus')
     user_tidyness_option = request.POST.get('tidynessStatus')
-    
+
     bed_time_options = {
         'opt1': 'before12',
         'opt2': 'before2',
@@ -119,7 +128,7 @@ def process_user_lifestyle(request):
         'opt2': 'semi-tidy',
         'opt3': 'untidy'
     }
-    
+
     request.user.bed_time = bed_time_options[user_bed_time_option]
     request.user.cigarette_status = cigarette_options[user_cigarette_option]
     request.user.tidyness_status = tidyness_options[user_tidyness_option]
