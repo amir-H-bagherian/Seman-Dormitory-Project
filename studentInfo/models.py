@@ -11,7 +11,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         app_label = 'studentInfo'
         
     student_id = models.CharField(max_length=10)
-    national_code = models.CharField(max_length=15, primary_key=True)
+    national_code = models.CharField(max_length=10, primary_key=True)
     cigarette_status = models.BooleanField(null=True)
     bed_time = models.CharField(max_length=15,null=True)
     tidyness_status = models.CharField(max_length=15,null=True)
