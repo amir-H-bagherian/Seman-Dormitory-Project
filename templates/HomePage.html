@@ -2,9 +2,9 @@
 
 {% block content %}
 
-   <div class="container mt-5 ">
-    <div class="mt-5 desctext">
-      <h1>
+   <div class="container  ">
+    <div class="desctext">
+      <h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle"
           viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -12,7 +12,7 @@
             d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
         </svg>
         هر آنچه در مورد سامانه ما باید بدانید:
-      </h1><br>
+      </h3><br>
       <p>
         سیستم سازماندهی دانشجویان متقاضی خوابگاه در نظر دارد برای بهبود کیفیت زندگی دانشجویان خوابگاه های دانشگاه سمنان،
         شرایطی را برای هم اتاق شدن دانشجویانی که سبک زندگی و تیپ شخصیتی نزدیک به هم دارند فراهم کند. این کار باعث کاهش
@@ -23,18 +23,17 @@
         آزمون تیپ شخصیت متشکل از تعدادی سوالات استاندارد است و بررسی آنها توسط الگوریتم های خاص انجام می گیرد. این آزمون به
         یکی از دو صورت زیر قابل انجام است: </p>
       <p>
-        <h2 style="color: blue;">آزمون معتبر MBTI( Recommended : )</h2>
+        <h5 class="text-primary my-3">آزمون معتبر MBTI( پیشنهاد شده )</h5>
         یک آزمون کامل و جامع که در آن برون گرا یا درون گرا بودن، شهودی یا حسی بوده، ادراکی یا قضاوتی بودن و در
         انجام آن معمولا در ۱۰ دقیقه نهایت احساسی یا منطقی بودن افراد مشخص میگردد. 
         حدود
         طول می کشد. هیچ جواب درست یا غلطی در این آزمون وجود ندارد.
-      <h2 style="color: blue;">آزمون سامانه:</h2>
+      <h5 class="text-primary my-3">آزمون سامانه:</h5>
         <p>
         آزمونی مختصر با تعداد سؤالات کمتر مختص افرادی که تمایل به گذراندن یک آزمون شخصیتی کامل و جامع مانند
         MBTI را ندارند.</p>
       <p>
-        دانشجویان میتوانند با انتخاب هر یک از دو مورد بالا روند سازماندهی خود را تکمیل کنند. پس از اتمام مهلت شرکت در ازمون تیپ شخصیت، سامانه کار تخصیص اتاق به دانشجوبان را اغاز  کرده و نتیجه کار سامانه از طریق ادرس ایمیل دریافتی در صفحه ابتدایی سایت، به دانشجویان اعلام میگردد.
-  
+        دانشجویان میتوانند با انتخاب هر یک از دو مورد بالا روند سازماندهی خود را تکمیل کنند. پس از اتمام مهلت شرکت در ازمون تیپ شخصیت، سامانه کار تخصیص اتاق به دانشجوبان را اغاز  کرده و نتیجه کار سامانه از طریق ادرس ایمیل دریافتی در صفحه ابتدایی سایت، به دانشجویان اعلام میگردد. 
         همچنین امکان 
         <u><b>درخواست اتاق مشترک</b></u>
         برای دانشجویانی که تقاضای هم اتاق شدن با دوستان خود را دارند وجود دارد. بدین
@@ -45,20 +44,15 @@
         سامانه
         <u>تا حد امکان</u>
         سعی میکند افرادی که با ثبت کد مشترک در پایگاه داده سامانه تقاضای هم اتاق شدن با هم را کرده اند، در یک اتاق قرار دهد. 
-
     </div>
     <hr>
-
-
     <div class="d-flex justify-content-center">
-      <div class="card text-start col-6 text-center mb-5">
-        <div class="form-check p-4">
+      <div class="card text-start col-8 text-center mb-5">
+        <div class="form-check p-4 d-flex control-div">
 
-          <input type="checkbox" id="checkme" />
-          <label class="form-check-label" for="">
+          <input type="checkbox" id="checkme" class="mx-3" />
+          <label class="form-check-label" for=""> 
             توضیحات بالا را مطالعه کردم و با قوانین سیستم سازماندهی دانشجویان متقاضی خوابگاه موافقم. </label>
-
-        <!-- <input type="submit" name="sendNewSms" class="inputButton" id="sendNewSms" value=" Send "disabled /> -->
         <button class ="btn btn-primary mx-3"type="submit" name="sendNewSms" class="inputButton" id="sendNewSms" value=" Send" disabled onclick="location.href='{% url 'pre-exam' %}'">مرحله بعد  </button>
         </div>
       </div>
@@ -70,18 +64,6 @@
         sendbtn.disabled = !this.checked;
       };
     </script>
-    <!-- <div class="d-flex justify-content-center">
-      <div class="card text-start col-4 text-center">
-        <div class="card-body">
-          <h4 class="card-title">ورود به صفحه آزمون</h4>
-          <p class="card-text">این آزمون برای بررسی شرایط شما و ارزیابی آن برای سازماندهی موثر تر دانشجویان طراحی شده
-            است</p>
-        </div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false"
-          autocomplete="off">ورود به آزمون</button>
-      </div>
-    </div> -->
-
   </div>
 
 {% endblock %}
