@@ -78,6 +78,10 @@ def kosar_page(request):
     return render(request, 'kosar.html')
 
 
+def about_us(request):
+    return render(request, 'about-us.html')
+
+
 @login_required(login_url='index')
 def disabled_request_page(request):
     return render(request, 'disabled.html')
@@ -134,3 +138,7 @@ def process_user_lifestyle(request):
     request.user.tidyness_status = tidyness_options[user_tidyness_option]
     request.user.save()
     return redirect('final-page')
+
+@login_required(login_url='index')
+def final_page(request):
+    return render(request, 'final-page.html')
