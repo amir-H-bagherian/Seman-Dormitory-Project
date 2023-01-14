@@ -54,14 +54,17 @@
     </div>
 
 
+
     {% if messages %}
-        <ul class="system-messages">
-            {% for message in messages %}
-                <div style="">
-                    <li class="alert alert-primary">{{message}}</li>
-                </div>
+    <ul class="system-messages">
+        {% for message in messages %}
+        <div class="justify-content-center d-flex container">
+            <div class="list-unstyled col col-5  ">
+                <li class="alert alert-primary text-center">{{message}}</li>
+            </div>
             {% endfor %}
-        </ul>
+        </div>
+    </ul>
     {% endif %}
 
 
