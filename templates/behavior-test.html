@@ -1,67 +1,89 @@
 {% extends 'base.html' %}
 
 {% block content %}
+	<div class="container">
+		<div class=" justify-content-center col  d-flex">
+			<div class="col-8 justify-content-center ">
 
-<div class="container">
-	<div class=" justify-content-center col  d-flex mt-5">
+				<form method="POST" action="../process-user-lifestyle/">
+					{% csrf_token %}
+					<div class="form-check p-5 border border-5">
+						<h4>1 .شما نسبت به سیگار کشیدن هم اتاقیتان چه نظری دارید؟
+						</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="cigaretteStatus" id="option1" value="opt1">
+							<label class="form-check-label" for="option1">
+							سیگاری هستم و مشکلی ندارم.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="cigaretteStatus" id="option2" value="opt2">
+							<label class="form-check-label" for="option2">
+							سیگاری نیستم ولی با دود سیگار مشکلی ندارم.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="cigaretteStatus" id="option3" value="opt3">
+							<label class="form-check-label" for="option3">
+							سیگاری نیستم و به شدت با دود سیگار مشکل دارم.
+							</label>
+						</div>
+					</div>
+				
+					<div class="form-check p-5 border border-5 ">
+						<h4>
+							2 .از نظر شما نظم و مرتب بودن اتاق به چه میزان اهمیت دارد؟ 
+						</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tidynessStatus" id="option1" value="opt1">
+							<label class="form-check-label" for="option1">
+							آدم منظمی هستم و مرتب بودن اتاق بسیار زیاد برایم اهمیت جدی دارد. 
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tidynessStatus" id="option2" value="opt2">
+							<label class="form-check-label" for="option2">
+							 نظم اتاق نسبتا برایم مهم است. 
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tidynessStatus" id="option3" value="opt3">
+							<label class="form-check-label" for="option3">
+							بنظرم به هم ریختگی اتاق مشکل جدی نیست. 
+							</label>
+						</div>
+					</div>		
+					
+					<div class="form-check p-5 border border-5">
+						<h4>3 .شما چه ساعتی در شب می خوابید؟
+						</h4>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="bedTime" id="option1" value="opt1">
+							<label class="form-check-label" for="option1">
+							قبل از ساعت 12.
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="bedTime" id="option2" value="opt2">
+							<label class="form-check-label" for="option2">
+							 قبل از ساعت .
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="bedTime" id="option3" value="opt3">
+							<label class="form-check-label" for="option3">
+							ساعت مشخصی برای خواب ندارم .
+							</label>
+						</div>
+					</div>
 
-		<div class="col-5 mx-5">
-			<div class="card">
-				<div class="card-body text-center">
-					<h5 class="card-title text-center mb-3">درخواست ایجاد کد برای اتاق مشترک </h5>
-					<h6 class="card-subtitle mb-2 text-muted " style="padding:39px;"> <svg
-							xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-							class="bi bi-info-circle" viewBox="0 0 16 16">
-							<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-							<path
-								d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-						</svg> شما می توانید با اشتراک گذاری این کد با افراد مشخصی درون یک اتاق قرار بگیرید.</h6>
+					<div class="d-flex justify-content-center my-5">
+						<button type="submit" class="btn btn-primary float-end px-5 "> ثبت </button>
+					</div>
+				</form>
 
-					<button type="submit" class="btn btn-primary">ایجاد کد اتاق مشترک</button>
-
-				</div>
-			</div>
-		</div>
-		<div class="col-5 mx-5">
-			<div class="card text-center">
-				<div class="card-body">
-					<h5 class="card-title text-center mb-3">استفاده از کد اتاق مشترک دیگران</h5>
-
-					<h6 class="card-subtitle mb-2 text-muted "> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-							height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-							<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-							<path
-								d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-						</svg> در صورتی که کد اتاق مشخصی دارید در اینجا وارد کنید</h6>
-					<div class="mb-3">
-						<label for="" class="form-label"></label>
-						<input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId"
-							placeholder="">
-						<small id="helpId" class="form-text text-muted">کد دریافتی از فرد مورد نظر را در اینجا وارد
-							کنید</small>
-					</div> <button type="submit" class="btn btn-primary">ثبت کد اتاق مشترک</button>
-
-
-				</div>
-			</div>
-
+			</div>	  
 		</div>
 	</div>
-	<div class="d-flex justify-content-center align-text">
-		<div class="col-10 mt-5 ">
-			<h4 class="text-center">نحوه درخواست اتاق مشترک</h4>
-			<p>
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-					class="bi bi-info-circle" viewBox="0 0 16 16">
-					<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-					<path
-						d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-				</svg>
-				در صورتی که مایل هستید با دوستان یا افراد خاصی در یک اتاق قرار بگیرید ، می توانید از این قسمت برای
-				درخواست اتاق مشترک اقدام کنید.
-				شما می توانید با گرفتن کد ویژه خودتان افراد دیگر را به اتاق دعوت کنید یا به وسیله کد فرد دیگری در اتاق
-				دیگری قرار گیرید.
-			</p>
-		</div>
-	</div>
-	{% endblock %}
+
+{% endblock %}
