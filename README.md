@@ -7,6 +7,13 @@ This project also considered the following features:
 + people who has taken [MBTI test](https://www.16personalities.com/fa/) previously are able to enter their personal type directly without taking our personal-type test
 
 
+## utilized technologies and frameworks
++ HTML5
++ CSS
++ JS
++ Bootstrap
++ Django
+
 ## How to use
 ##### Simply clone project and use `pip install -r requirements.txt` to install necessary packages for this project on your system. Then issue makemigrations and migrate commands and runserver
 
@@ -33,3 +40,13 @@ This project consists of 2 apps, **studentInfo** and **mbti_test**
  + is_superuser
  + is_staff
  + is_active
+
+## Developers
++ Mohammad Hossein Abdollahi Fard
++ Saman Moshiri
++ Aboulfazl Amouzgari
++ Amir Hossein Bagherian
++ Sepehr Vahedi
+
+## More
+consider to give us a star if you like
