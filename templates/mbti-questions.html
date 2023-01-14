@@ -8,43 +8,50 @@
             <div class="row ">
 
 
-                <div class="text-bg-danger">
-                        <p> عبارت 
+                <div class="text-bg-danger text-center text-large dangerbox">
+                         <p >  
                         این تست دارای ۶۰ سوال است. در پاسخ به سوالات گزینه ای را انتخاب کنید که به شخصیت واقعی شما
                         نزدیک تر است نه ویژگی هایی که می خواهید داشته باشید. پاسخ درست یا غلط وجود ندارد. به تمامی
                         سوالات با دقت پاسخ دهید.
-                    </p>
+                     </p>
                 </div>
 
-                <div class="question-body">
+                <div class="question-body ">
 
                     <form method="POST" class="form-box" id="assessment-questions" action="mbti_result/">
                         {% csrf_token %}
 
-                        <div class="q-no-answer m-t-30" id="1">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱</p>
+
+
+
+                        <div class="answerbox m-t-30" id="1">
+                            <div class=" m-t-30 text-center" id="1">
+                                <p class="mb-5">"سوال ۱"</p>
                             </div>
-                            <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
-                                    <input id="question_10" name="question_1" type="radio" value="I">
+                                    <input id="question_10" name="question_1" type="radio" value="S">
                                     <label for="question_10">
                                         معمولاً احساسات و عواطف خود را در خويش نگه می دارم.
                                     </label>
                                 </div>
                                 <div class="radio radio-orange">
-                                    <input id="question_11" name="question_1" type="radio" value="E">
+                                    <input id="question_11" name="question_1" type="radio" value="N">
                                     <label for="question_11">
                                         معمولاً احساسات و عواطف خودرا با ديگران و به راحتی درميان مي گذارم.
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="2">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲</p>
+
+
+
+
+                        <div class="answerbox m-t-30" id="2">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_20" name="question_2" type="radio" value="S">
                                     <label for="question_20">
@@ -59,11 +66,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="3">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳</p>
+                        <div class="answerbox m-t-30" id="3">
+                            <div class=" m-t-30 text-center" id="1">
+                                    سوال ۳"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_31" name="question_3" type="radio" value="T">
                                     <label for="question_31">
@@ -78,11 +85,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="4">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴</p>
+                        <div class="answerbox m-t-30" id="4">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_40" name="question_4" type="radio" value="P">
                                     <label for="question_40">
@@ -97,11 +104,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="5">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵</p>
+                        <div class="answerbox m-t-30" id="5">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_50" name="question_5" type="radio" value="I">
                                     <label for="question_50">
@@ -118,11 +125,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="6">
-                            <div class="number mt-3">
-                                    <p> عبارت ۶</p>
+                        <div class="answerbox m-t-30" id="6">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۶"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_60" name="question_6" type="radio" value="S">
                                     <label for="question_60">
@@ -138,11 +145,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="7">
-                            <div class="number mt-3">
-                                    <p> عبارت ۷</p>
+                        <div class="answerbox m-t-30" id="7">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۷"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_71" name="question_7" type="radio" value="T">
                                     <label for="question_71">
@@ -158,11 +165,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="8">
-                            <div class="number mt-3">
-                                    <p> عبارت ۸</p>
+                        <div class="answerbox m-t-30" id="8">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۸"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_80" name="question_8" type="radio" value="P">
                                     <label for="question_80">
@@ -177,11 +184,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="9">
-                            <div class="number mt-3">
-                                    <p> عبارت ۹</p>
+                        <div class="answerbox m-t-30" id="9">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۹"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_90" name="question_9" type="radio" value="I">
                                     <label for="question_90">
@@ -196,11 +203,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="10">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۰</p>
+                        <div class="answerbox m-t-30" id="10">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۰"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_100" name="question_10" type="radio" value="S">
                                     <label for="question_100">
@@ -217,11 +224,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="11">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۱</p>
+                        <div class="answerbox m-t-30" id="11">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۱"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_111" name="question_11" type="radio" value="T">
                                     <label for="question_111">
@@ -236,11 +243,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="12">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۲</p>
+                        <div class="answerbox m-t-30" id="12">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۲"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_120" name="question_12" type="radio" value="P">
                                     <label for="question_120">
@@ -255,11 +262,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="13">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۳</p>
+                        <div class="answerbox m-t-30" id="13">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۳"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_130" name="question_13" type="radio" value="I">
                                     <label for="question_130">
@@ -274,11 +281,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="14">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۴</p>
+                        <div class="answerbox m-t-30" id="14">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۴"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_140" name="question_14" type="radio" value="S">
                                     <label for="question_140">
@@ -293,11 +300,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="15">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۵</p>
+                        <div class="answerbox m-t-30" id="15">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۵"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_151" name="question_15" type="radio" value="T">
                                     <label for="question_151">
@@ -312,11 +319,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="16">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۶</p>
+                        <div class="answerbox m-t-30" id="16">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۶"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_160" name="question_16" type="radio" value="P">
                                     <label for="question_160">
@@ -332,11 +339,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="17">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۷</p>
+                        <div class="answerbox m-t-30" id="17">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۷"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_170" name="question_17" type="radio" value="I">
                                     <label for="question_170">
@@ -351,11 +358,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="18">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۸</p>
+                        <div class="answerbox m-t-30" id="18">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۸"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_180" name="question_18" type="radio" value="S">
                                     <label for="question_180">
@@ -370,11 +377,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="19">
-                            <div class="number mt-3">
-                                    <p> عبارت ۱۹</p>
+                        <div class="answerbox m-t-30" id="19">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۱۹"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_191" name="question_19" type="radio" value="T">
                                     <label for="question_191">
@@ -389,11 +396,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="20">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۰</p>
+                        <div class="answerbox m-t-30" id="20">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۰"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_200" name="question_20" type="radio" value="P">
                                     <label for="question_200">
@@ -409,11 +416,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="21">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۱</p>
+                        <div class="answerbox m-t-30" id="21">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۱"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_210" name="question_21" type="radio" value="I">
                                     <label for="question_210">
@@ -428,11 +435,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="22">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۲</p>
+                        <div class="answerbox m-t-30" id="22">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۲"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_220" name="question_22" type="radio" value="S">
                                     <label for="question_220">
@@ -447,11 +454,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="23">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۳</p>
+                        <div class="answerbox m-t-30" id="23">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۳"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_231" name="question_23" type="radio" value="T">
                                     <label for="question_231">
@@ -466,11 +473,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="24">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۴</p>
+                        <div class="answerbox m-t-30" id="24">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۴"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_240" name="question_24" type="radio" value="P">
                                     <label for="question_240">
@@ -486,11 +493,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="25">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۵</p>
+                        <div class="answerbox m-t-30" id="25">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۵"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_250" name="question_25" type="radio" value="I">
                                     <label for="question_250">
@@ -505,11 +512,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="26">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۶</p>
+                        <div class="answerbox m-t-30" id="26">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۶"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_260" name="question_26" type="radio" value="S">
                                     <label for="question_260">
@@ -524,11 +531,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="27">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۷</p>
+                        <div class="answerbox m-t-30" id="27">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۷"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_271" name="question_27" type="radio" value="T">
                                     <label for="question_271">
@@ -543,11 +550,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="28">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۸</p>
+                        <div class="answerbox m-t-30" id="28">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۸"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_280" name="question_28" type="radio" value="P">
                                     <label for="question_280">
@@ -562,11 +569,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="29">
-                            <div class="number mt-3">
-                                    <p> عبارت ۲۹</p>
+                        <div class="answerbox m-t-30" id="29">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۲۹"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_290" name="question_29" type="radio" value="I">
                                     <label for="question_290">
@@ -581,11 +588,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="30">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۰</p>
+                        <div class="answerbox m-t-30" id="30">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۰"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_300" name="question_30" type="radio" value="S">
                                     <label for="question_300">
@@ -600,11 +607,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="31">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۱</p>
+                        <div class="answerbox m-t-30" id="31">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۱"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_311" name="question_31" type="radio" value="T">
                                     <label for="question_311">
@@ -619,11 +626,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="32">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۲</p>
+                        <div class="answerbox m-t-30" id="32">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۲"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_320" name="question_32" type="radio" value="P">
                                     <label for="question_320">
@@ -640,11 +647,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="33">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۳</p>
+                        <div class="answerbox m-t-30" id="33">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۳"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_330" name="question_33" type="radio" value="I">
                                     <label for="question_330">
@@ -661,11 +668,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="34">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۴</p>
+                        <div class="answerbox m-t-30" id="34">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۴"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_340" name="question_34" type="radio" value="S">
                                     <label for="question_340">
@@ -680,11 +687,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="35">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۵</p>
+                        <div class="answerbox m-t-30" id="35">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۵"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_351" name="question_35" type="radio" value="T">
                                     <label for="question_351">
@@ -700,11 +707,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="36">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۶</p>
+                        <div class="answerbox m-t-30" id="36">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۶"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_360" name="question_36" type="radio" value="P">
                                     <label for="question_360">
@@ -721,11 +728,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="37">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۷</p>
+                        <div class="answerbox m-t-30" id="37">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۷"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_370" name="question_37" type="radio" value="I">
                                     <label for="question_370">
@@ -740,11 +747,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="38">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۸</p>
+                        <div class="answerbox m-t-30" id="38">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۸"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_380" name="question_38" type="radio" value="S">
                                     <label for="question_380">
@@ -759,11 +766,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="39">
-                            <div class="number mt-3">
-                                    <p> عبارت ۳۹</p>
+                        <div class="answerbox m-t-30" id="39">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۳۹"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_391" name="question_39" type="radio" value="T">
                                     <label for="question_391">
@@ -778,11 +785,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="40">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۰</p>
+                        <div class="answerbox m-t-30" id="40">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۰"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_400" name="question_40" type="radio" value="P">
                                     <label for="question_400">
@@ -799,11 +806,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="41">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۱</p>
+                        <div class="answerbox m-t-30" id="41">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۱"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_410" name="question_41" type="radio" value="I">
                                     <label for="question_410">
@@ -818,11 +825,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="42">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۲</p>
+                        <div class="answerbox m-t-30" id="42">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۲"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_420" name="question_42" type="radio" value="S">
                                     <label for="question_420">
@@ -838,11 +845,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="43">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۳</p>
+                        <div class="answerbox m-t-30" id="43">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۳"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_431" name="question_43" type="radio" value="T">
                                     <label for="question_431">
@@ -857,11 +864,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="44">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۴</p>
+                        <div class="answerbox m-t-30" id="44">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۴"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_440" name="question_44" type="radio" value="P">
                                     <label for="question_440">
@@ -876,11 +883,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="45">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۵</p>
+                        <div class="answerbox m-t-30" id="45">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۵"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_450" name="question_45" type="radio" value="I">
                                     <label for="question_450">
@@ -895,11 +902,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="46">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۶</p>
+                        <div class="answerbox m-t-30" id="46">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۶"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_460" name="question_46" type="radio" value="S">
                                     <label for="question_460">
@@ -914,11 +921,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="47">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۷</p>
+                        <div class="answerbox m-t-30" id="47">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۷"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_471" name="question_47" type="radio" value="T">
                                     <label for="question_471">
@@ -933,11 +940,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="48">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۸</p>
+                        <div class="answerbox m-t-30" id="48">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۸"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_480" name="question_48" type="radio" value="P">
                                     <label for="question_480">
@@ -954,11 +961,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="49">
-                            <div class="number mt-3">
-                                    <p> عبارت ۴۹</p>
+                        <div class="answerbox m-t-30" id="49">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۴۹"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_490" name="question_49" type="radio" value="I">
                                     <label for="question_490">
@@ -973,11 +980,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="50">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۰</p>
+                        <div class="answerbox m-t-30" id="50">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۰"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_500" name="question_50" type="radio" value="S">
                                     <label for="question_500">
@@ -992,11 +999,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="51">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۱</p>
+                        <div class="answerbox m-t-30" id="51">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۱"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_511" name="question_51" type="radio" value="T">
                                     <label for="question_511">
@@ -1013,11 +1020,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="52">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۲</p>
+                        <div class="answerbox m-t-30" id="52">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۲"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_520" name="question_52" type="radio" value="P">
                                     <label for="question_520">
@@ -1034,11 +1041,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="53">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۳</p>
+                        <div class="answerbox m-t-30" id="53">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۳"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_530" name="question_53" type="radio" value="I">
                                     <label for="question_530">
@@ -1053,11 +1060,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="54">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۴</p>
+                        <div class="answerbox m-t-30" id="54">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۴"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_540" name="question_54" type="radio" value="S">
                                     <label for="question_540">
@@ -1074,11 +1081,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="55">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۵</p>
+                        <div class="answerbox m-t-30" id="55">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۵"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_551" name="question_55" type="radio" value="T">
                                     <label for="question_551">
@@ -1093,11 +1100,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="56">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۶</p>
+                        <div class="answerbox m-t-30" id="56">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۶"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_560" name="question_56" type="radio" value="P">
                                     <label for="question_560">
@@ -1113,11 +1120,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="57">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۷</p>
+                        <div class="answerbox m-t-30" id="57">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۷"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_570" name="question_57" type="radio" value="I">
                                     <label for="question_570">
@@ -1132,11 +1139,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="58">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۸</p>
+                        <div class="answerbox m-t-30" id="58">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۸"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_580" name="question_58" type="radio" value="S">
                                     <label for="question_580">
@@ -1151,11 +1158,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="59">
-                            <div class="number mt-3">
-                                    <p> عبارت ۵۹</p>
+                        <div class="answerbox m-t-30" id="59">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۵۹"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_591" name="question_59" type="radio" value="T">
                                     <label for="question_591">
@@ -1170,11 +1177,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="q-no-answer m-t-30" id="60">
-                            <div class="number mt-3">
-                                    <p> عبارت ۶۰</p>
+                        <div class="answerbox m-t-30" id="60">
+                            <div class=" m-t-30 text-center" id="1">
+                                     <p class="mb-5">"سوال ۶۰"</p>
                             </div>
-                                <div class="answer col-lg-11 col-md-10">
+                               <div class="answer col-lg-11 col-md-10 d-flex " >
                                 <div class="radio radio-orange">
                                     <input id="question_600" name="question_60" type="radio" value="P">
                                     <label for="question_600">
@@ -1189,12 +1196,11 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">ثبت</button>
                     </form>
+                    <div class="btn-container d-flex ">
+                        <button type="submit" class="btn btn-primary my-5 px-5" >ثبت</button>
+
+                    </div>
 
                 </div>
 
