@@ -93,7 +93,9 @@ background-color: #5061CB;
     font-size: 1rem !important;
   }
   .mytest{
-    margin-top: 98px; 
+    margin-top: 100px; 
+    align-items: center;
+    justify-content: space-between;
  }
 .mytext{
   text-align: justify;
@@ -103,4 +105,35 @@ background-color: #5061CB;
   justify-content: center;
 float: left;
 margin: 30px;
+}
+.control-div{
+  align-items: center;
+}
+.small-text-btn{
+  font-size: 15px;
+}
+.m-auto{
+  margin: auto;
+}
+.align-text{
+  text-align: justify;
+}
+.text-large{
+  font-size:20px;
+}
+.answer{
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.answerbox{
+border: grey solid 1px;
+padding: 30px 50px 20px 50px;
+}
+.dangerbox{
+  border: red solid 3px;
+  border-radius: 10px;
+}
+.btn-container{
+  justify-content: center;
 }
